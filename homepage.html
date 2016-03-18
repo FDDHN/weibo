@@ -1,0 +1,109 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>主页</title>
+	</head>
+	<link rel="stylesheet" href="style.css">
+	
+	<body >
+		<!-- 导航栏 -->
+		<nav>
+			<ul>
+				<li><a img="">logo</a></li>
+				<li><a href="homepage.html">首页</a></li>
+				<li><a href="discover.html">发现</a></li>
+				<li><a href="privatelatter.html">私信</a></li>
+				<li><a href="homepage.html" id="weibo_name"></a></li>
+				<li><a href="" id="logout">退出登录</a></li>
+				
+			</ul>
+		</nav>
+		<!-- 导航栏 -->
+
+		<div class="main">
+			<!-- 左边导航 -->
+			<div id="rightcontent">
+		 		<a href="homepage.html" >首页</a><br />
+		 		<a href="discover.html" >发现</a><br/>
+		 		<!-- <a href="login.html">登录</a><br/> -->
+		 		<!-- <a href="register.html" >注册</a><br/> -->
+		 		<a href="privatelatter.html" >私信</a>
+	 		</div>
+
+	 		<div id="leftcontent">
+				<!-- 我的信息 -->
+				<div class="myinfomation">
+					<div class="mf_picture">
+						<img src="images\headpicture.jpg"/>
+					</div >
+					<div class="mf_username">
+						<span id="username"><span>
+					</div>
+					<div class="mf_info">
+						<table  class="weibo_table">
+							<tr>
+								<td><a href="#" >关注</a></td>
+								<td><a href="#" >粉丝</a></td>
+								<td><a href="#" >微博</a></td>
+							</tr>
+							<tr>
+								<td><span id="attentions"></span></td>
+								<td><span id="fans"></span></td>
+								<td><span id="microblog"></span></td>
+							</tr>
+						</table>
+					</div>
+
+				</div>
+				<!-- 我的信息 -->
+
+	 			<!-- 发布微博 -->
+				<div class="publish">
+					<div class="publish_title">有什么新鲜事和大家分享吗？</div>
+					<textarea cols = "65"  rows = "6" id="publish_content" ></textarea>
+					<div class="words">
+						你还可以输入<span id="leftwords">120</span>个字
+					</div>
+					<div class="publish_publish">
+<!-- 						<div class="btn"> 
+						     <span>表情</span> 
+						     <input class="fileupload" type="file" name="mypic"> 
+						</div>  -->
+						<div class="btn">
+							<!-- <span>表情</span>  -->
+							<a class="biaoqing" value="表情" style="color:#fff">表情</a> 
+						</div>
+						<div class="btn"> 
+						     <span>图片</span> 
+						     <input class="fileupload" type="file" name="mypic"> 
+						</div> 
+						<div class="btn"> 
+						     <span>视频</span> 
+						     <input class="fileupload" type="file" name="mypic"> 
+						</div> 
+						<div class="btn"> 
+						     <span>音乐</span> 
+						     <input class="fileupload" type="file" name="mypic"> 
+						</div> 
+<!-- 						<div class="progress"> 
+						    <span class="bar"></span><span class="percent">0%</span > 
+						</div>  -->
+						<div class="files"></div> 
+						<div id="showimg"></div> 
+
+						<input type = "submit" value = "发布" class="publish_submit"/>					
+					</div>			
+				</div>
+				<!-- 发布微博 -->
+
+	 		</div>
+			
+		</div>	
+	</body>
+
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.form.js"></script>
+	<script type="text/javascript" src="js/myjs.js"></script>
+	<script type="text/javascript" src="js/homepage.js"></script>
+</html>
